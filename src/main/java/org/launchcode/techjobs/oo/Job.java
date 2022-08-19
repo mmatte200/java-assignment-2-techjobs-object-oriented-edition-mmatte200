@@ -26,10 +26,10 @@ public class Job {
     public Job(String name, Employer employer, Location location, PositionType positionType, CoreCompetency coreCompetency){
         this();
         this.name = name;
-        this.employer = new Employer(employer.getValue());
-        this.location = new Location(location.getValue());
-        this.positionType = new PositionType(positionType.getValue());
-        this.coreCompetency = new CoreCompetency(coreCompetency.getValue());
+        this.employer = employer;
+        this.location = location;
+        this.positionType = positionType;
+        this.coreCompetency = coreCompetency;
 
     }
 
@@ -51,7 +51,7 @@ public class Job {
 
     @Override
     public String toString() {
-        String emptyField = "Data not available";
+
 
 
         return "\n" + "ID: " + this.id + "\n" +
