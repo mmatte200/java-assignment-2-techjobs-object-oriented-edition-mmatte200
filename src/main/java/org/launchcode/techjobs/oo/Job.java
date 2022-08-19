@@ -51,6 +51,7 @@ public class Job {
 
     @Override
     public String toString() {
+        String emptyField = "Data not available";
 
 
         return "\n" + "ID: " + this.id + "\n" +
